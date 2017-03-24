@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Seaport Brewing Co.</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- character encoding -->
+    <meta http-equiv="x-ua-compatible" content="IE=edge, chrome=1">
+    <!-- Display webpage in edge mode/IE in highest supported document mode -->
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <!-- Optimizations for mobile devices -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap-iso.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- Animate.css library -->
+    <link href="css/animate.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/demo.css" rel="stylesheet"> </head>
+
+<body>
+    <!-- Jquery first, then JavaScript -->
+    <section id="homePage">
+        <div class="container">
+            <!--<header class="header">
+               <a class="menu">Menu</a>
+                <ul class="nav">
+                    <li> <a class=".smooth-scroll" href="#aboutUs"> about us </a></li>
+                    <li> <a class=".smooth-scroll" href="#theBeer"> the beer </a></li>
+                    <li> <a class=".smooth-scroll" href="#theCrew"> the crew </a></li>
+                    <li class="nav-logo">
+                        <a href="#"> <img class="homeLogo" src="img/homePageLogo.svg"> </a>
+                    </li>
+                    <li> <a class="growler-line-up" href="#growler">Growler</a></li>
+                    <li> <a class=".smooth-scroll" href="#contact">contact</a></li>
+                    <li> <a class="growler-line-up" href="#growler">blog</a></li>
+                </ul>
+            </header>-->
+            <div class="bootstrap-iso">
+                <nav class="navbar navbar-inverse navbar-fixed-top navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                            <a href="#homePage" class="navbar-brand">Seaport
+                            </a>  </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                           
+                            <ul class="nav navbar-nav navbar-right">
+                                <!--<li> <a><img src="img/homeMenuLogo.png"></a></li>-->
+                                <li> <a class="active" href="#homePage"> home </a></li>
+                                <li> <a href="#aboutUs"> about us </a></li>
+                                <li> <a href="#theBeer"> the beer </a></li>
+                                <li> <a href="#meetTheCrew"> the team </a></li>
+                                <li> <a href="#contact">contact</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <ul class="socialMediaList">
+                <li>
+                    <a href="/"><img src="img/twitter.png"></a>
+                </li>
+                <li>
+                    <a href="/"><img src="img/facebook.png"></a>
+                </li>
+                <li>
+                    <a href="/"><img src="img/youtube.png"></a>
+                </li>
+                <li>
+                    <a href="/"><img src="img/instagram.png"></a>
+                </li>
+            </ul>
+            <div class="subHeader">
+                <h1 class="subHeaderTitle"><span class="accent-text">Quality </span>
+                <span class="subHeaderHandicraftedBeer">HANDCRAFTED BEER</span></h1> <span class="subHeaderEst">est. 1990 <span class="dot">•</span>&nbsp;&nbsp; Madrid Spain</span>
+            </div>
+            <div class="mountainImg">
+                <div class="backgroundImage"> </div>
+                <div class="boat boatAnimation"> </div>
+                <div class="layer wavelayer1">
+                    <div class="wave1 wave1animation"></div>
+                </div>
+                <div class="layer wavelayer2">
+                    <div class="wave2 wave2animation"></div>
+                </div>
+                <div class="layer wavelayer3">
+                    <div class="wave3 wave3animation"></div>
+                    <div class="lighthouse"></div>
+                    <div class="rock"></div>
+                </div>
+                <div class="layer wavelayer4">
+                    <div class="wave4 wave4animation"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="aboutUs" class="aboutUs">
+        <div class="container">
+            <div class="wrap1">
+                <h2 class="aboutUsHeader wow fadeInUp"><span class="accent-text ">Welcome to the </span>Seaport Brewing Company</h2>
+                <div class="wrap">
+                    <div class="column col1 wow fadeInUp " data-wow-delay="0.5s">
+                        <p>Starting a craft brewery in 1990 was, by necessity, a labour of love. At Seaport Brewing Company we believe life is always more interesting with a creative twist. And that inventive spirit informs everything we do; that’s why we skillfully hone each recipe and why we carefully select quality ingredients.  </p>
+                    </div>
+                    <div class="column col2 wow fadeInUp" data-wow-delay="1s">
+                        <p>It’s also why we invest so much time in countless test batches. And why sometimes we go back to the drawing board and start over from scratch. Of course we do it not only because we love it, but also because we want to create balanced, flavorful beers that everyone can enjoy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="theBeer" class="theBeer">
+        <div class="container">
+            <div class="wrap3">
+                <div class="navalLogo wow fadeInUp"> <img src="img/thebeerlogo.png" class="mask"></div>
+                <h2 class="aboutUsHeader scroll-into-view wow fadeInUp" data-wow-delay="0.5s">
+                <span class="accent-text">Handcrafted </span>Beer</h2>
+                <!--####################################################################################################-->
+                <!--Start of Caousel-->
+                <div class="bootstrap-iso">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="300000" data-type="multi">
+                        <!-- Indicators 
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>-->
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner wrap4" >
+                            <!-- First slide -->
+                            <div class="item active">
+                                <!--<div class="wrap4">-->
+                                    <!-- <div class="carousel-caption">-->
+                                <div class="col-md-4 col-sm-6 col-xs-12 addMargin"> <div style="text-align: center;">
+                                       <img  class="bottle" src="img/f1.png" alt=""></div> 
+                                       <span class="accent-text2 subtitle">House Series</span>
+                                        <div class="h3substitute">Frost Hammer</div>
+                                        <div class="h3substitute addPadding">Ale</div>
+                                        <ul class="blocks">
+                                            <li> <img class="levels" src="img/Racerocks-IBU.png" alt=""></li>
+                                            <li class="level">
+                                                <div class="abv">ABV</div>
+                                                <div class="h3substitute percentage">5.2</div>
+                                            </li>
+                                        </ul>
+                                        <div class="accent-text2 subtitle">Available in</div>
+                                        <div class="subTitleHeadline">6-pack bottles / 6-pack cans / Bounty</div>
+                                        <div class="subTitleText"> This hearty Scottish-style amber is our flagship ale, brewed since 1998. UK malts, hops and our proprietary house yeast produce a bold, flavourful ale with notes of caramel and chocolate. </div>
+                                <!--</div>-->
+                                </div></div>
+                            <div class="item">
+                                <!--<div class="wrap4">-->
+                                     <div class="col-md-4 col-sm-6 col-xs-12 addMargin"> <div style="text-align: center;">
+                                       <img  class="bottle" src="img/r1.png" alt=""></div> 
+                                       <span class="accent-text2 subtitle">House Series</span>
+                                        <div class="h3substitute">Rio Blanco</div>
+                                        <div class="h3substitute addPadding">Ale</div>
+                                        <ul class="blocks">
+                                            <li> <img class="levels" src="img/Racerocks-IBU.png" alt=""></li>
+                                            <li class="level">
+                                                <div class="abv">ABV</div>
+                                                <div class="h3substitute percentage">5.2</div>
+                                            </li>
+                                        </ul>
+                                        <div class="accent-text2 subtitle">Available in</div>
+                                        <div class="subTitleHeadline">6-pack bottles / 6-pack cans / Bounty</div>
+                                        <div class="subTitleText"> This hearty Scottish-style amber is our flagship ale, brewed since 1998. UK malts, hops and our proprietary house yeast produce a bold, flavourful ale with notes of caramel and chocolate. </div>
+                                <!--</div>-->
+                                </div></div>
+                            <div class="item">
+                                <!--<div class="wrap4">-->
+                                     <div class="col-md-4 col-sm-6 col-xs-12 addMargin"> <div style="text-align: center;">
+                                       <img  class="bottle" src="img/f1.png" alt=""></div> 
+                                       <span class="accent-text2 subtitle">House Series</span>
+                                        <div class="h3substitute">Frost Hammer</div>
+                                        <div class="h3substitute addPadding">Ale</div>
+                                        <ul class="blocks">
+                                            <li> <img class="levels" src="img/Racerocks-IBU.png" alt=""></li>
+                                            <li class="level">
+                                                <div class="abv">ABV</div>
+                                                <div class="h3substitute percentage">5.2</div>
+                                            </li>
+                                        </ul>
+                                        <div class="accent-text2 subtitle">Available in</div>
+                                        <div class="subTitleHeadline">6-pack bottles / 6-pack cans / Bounty</div>
+                                        <div class="subTitleText"> This hearty Scottish-style amber is our flagship ale, brewed since 1998. UK malts, hops and our proprietary house yeast produce a bold, flavourful ale with notes of caramel and chocolate. </div>
+                                    <!--</div>-->
+                                <!--</div>-->
+                                </div></div>
+                            <!-- /.item -->
+                            <!-- Second slide -->
+                            <div class="item">
+                                <!--<div class="wrap4">-->
+                                    <!-- <div class="carousel-caption">-->
+                                     <div class="col-md-4 col-sm-6 col-xs-12 addMargin"> <div style="text-align: center;">
+                                       <img  class="bottle" src="img/r1.png" alt=""></div> 
+                                       <span class="accent-text2 subtitle">House Series</span>
+                                        <div class="h3substitute">Rio Blanco</div>
+                                        <div class="h3substitute addPadding">Ale</div>
+                                        <ul class="blocks">
+                                            <li> <img class="levels" src="img/Racerocks-IBU.png" alt=""></li>
+                                            <li class="level">
+                                                <div class="abv">ABV</div>
+                                                <div class="h3substitute percentage">5.2</div>
+                                            </li>
+                                        </ul>
+                                        <div class="accent-text2 subtitle">Available in</div>
+                                        <div class="subTitleHeadline">6-pack bottles / 6-pack cans / Bounty</div>
+                                        <div class="subTitleText"> This hearty Scottish-style amber is our flagship ale, brewed since 1998. UK malts, hops and our proprietary house yeast produce a bold, flavourful ale with notes of caramel and chocolate. </div>
+                                    </div>
+                                <!--</div>-->
+                            </div>
+                            <div class="item">
+                                <!--<div class="wrap4">-->
+                                     <div class="col-md-4 col-sm-6 col-xs-12 addMargin"> <div style="text-align: center;">
+                                       <img  class="bottle" src="img/f1.png" alt=""></div> 
+                                       <span class="accent-text2 subtitle">House Series</span>
+                                        <div class="h3substitute">Frost Hammer</div>
+                                        <div class="h3substitute addPadding">Ale</div>
+                                        <ul class="blocks">
+                                            <li> <img class="levels" src="img/Racerocks-IBU.png" alt=""></li>
+                                            <li class="level">
+                                                <div class="abv">ABV</div>
+                                                <div class="h3substitute percentage">5.2</div>
+                                            </li>
+                                        </ul>
+                                        <div class="accent-text2 subtitle">Available in</div>
+                                        <div class="subTitleHeadline">6-pack bottles / 6-pack cans / Bounty</div>
+                                        <div class="subTitleText"> This hearty Scottish-style amber is our flagship ale, brewed since 1998. UK malts, hops and our proprietary house yeast produce a bold, flavourful ale with notes of caramel and chocolate. </div>
+                                    </div>
+                                <!--</div>-->
+                            </div>
+                            <div class="item">
+                                <!--<div class="wrap4">-->
+                                     <div class="col-md-4 col-sm-6 col-xs-12 addMargin"> <div style="text-align: center;">
+                                       <img  class="bottle" src="img/r1.png" alt=""></div> 
+                                       <span class="accent-text2 subtitle">House Series</span>
+                                        <div class="h3substitute">Rio Blanco</div>
+                                        <div class="h3substitute addPadding">Ale</div>
+                                        <ul class="blocks">
+                                            <li> <img class="levels" src="img/Racerocks-IBU.png" alt=""></li>
+                                            <li class="level">
+                                                <div class="abv">ABV</div>
+                                                <div class="h3substitute percentage">5.2</div>
+                                            </li>
+                                        </ul>
+                                        <div class="accent-text2 subtitle">Available in</div>
+                                        <div class="subTitleHeadline">6-pack bottles / 6-pack cans / Bounty</div>
+                                        <div class="subTitleText"> This hearty Scottish-style amber is our flagship ale, brewed since 1998. UK malts, hops and our proprietary house yeast produce a bold, flavourful ale with notes of caramel and chocolate. </div>
+                                    </div>
+                                    <!--</div>-->
+                                <!--</div>-->
+                            </div>
+                            <!-- /.item -->
+                            <!-- Third slide -->
+                            <div class="item">
+                                <!--<div class="wrap4">-->
+                                    <!-- <div class="carousel-caption">-->
+                                     <div class="col-md-4 col-sm-6 col-xs-12 addMargin"> <div style="text-align: center;">
+                                       <img  class="bottle" src="img/f1.png" alt=""></div> 
+                                       <span class="accent-text2 subtitle">House Series</span>
+                                        <div class="h3substitute">Frost Hammer</div>
+                                        <div class="h3substitute addPadding">Ale</div>
+                                        <ul class="blocks">
+                                            <li> <img class="levels" src="img/Racerocks-IBU.png" alt=""></li>
+                                            <li class="level">
+                                                <div class="abv">ABV</div>
+                                                <div class="h3substitute percentage">5.2</div>
+                                            </li>
+                                        </ul>
+                                        <div class="accent-text2 subtitle">Available in</div>
+                                        <div class="subTitleHeadline">6-pack bottles / 6-pack cans / Bounty</div>
+                                        <div class="subTitleText"> This hearty Scottish-style amber is our flagship ale, brewed since 1998. UK malts, hops and our proprietary house yeast produce a bold, flavourful ale with notes of caramel and chocolate. </div>
+                                    </div>
+                                <!--</div>-->
+                            </div>
+                            <div class="item">
+                                <!--<div class="wrap4">-->
+                                     <div class="col-md-4 col-sm-6 col-xs-12 addMargin"> <div style="text-align: center;">
+                                       <img  class="bottle" src="img/r1.png" alt=""></div> 
+                                       <span class="accent-text2 subtitle">House Series</span>
+                                        <div class="h3substitute">Rio Blanco</div>
+                                        <div class="h3substitute addPadding">Ale</div>
+                                        <ul class="blocks">
+                                            <li> <img class="levels" src="img/Racerocks-IBU.png" alt=""></li>
+                                            <li class="level">
+                                                <div class="abv">ABV</div>
+                                                <div class="h3substitute percentage">5.2</div>
+                                            </li>
+                                        </ul>
+                                        <div class="accent-text2 subtitle">Available in</div>
+                                        <div class="subTitleHeadline">6-pack bottles / 6-pack cans / Bounty</div>
+                                        <div class="subTitleText"> This hearty Scottish-style amber is our flagship ale, brewed since 1998. UK malts, hops and our proprietary house yeast produce a bold, flavourful ale with notes of caramel and chocolate. </div>
+                                    </div>
+                                <!--</div>-->
+                            </div>
+                            <div class="item">
+                                <!--<div class="wrap4">-->
+                                     <div class="col-md-4 col-sm-6 col-xs-12 addMargin"> <div style="text-align: center;">
+                                       <img  class="bottle" src="img/f1.png" alt=""></div> 
+                                       <span class="accent-text2 subtitle">House Series</span>
+                                        <div class="h3substitute">Frost Hammer</div>
+                                        <div class="h3substitute addPadding">Ale</div>
+                                        <ul class="blocks">
+                                            <li> <img class="levels" src="img/Racerocks-IBU.png" alt=""></li>
+                                            <li class="level">
+                                                <div class="abv">ABV</div>
+                                                <div class="h3substitute percentage">5.2</div>
+                                            </li>
+                                        </ul>
+                                        <div class="accent-text2 subtitle">Available in</div>
+                                        <div class="subTitleHeadline">6-pack bottles / 6-pack cans / Bounty</div>
+                                        <div class="subTitleText"> This hearty Scottish-style amber is our flagship ale, brewed since 1998. UK malts, hops and our proprietary house yeast produce a bold, flavourful ale with notes of caramel and chocolate. </div>
+                                    </div>
+                                    <!--</div>-->
+                                <!--</div>-->
+                            </div>
+                            <!-- /.item -->
+                        </div>
+                        <!-- /.carousel-inner -->
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next" style="right:20px;"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
+                    </div>
+                    <!-- /.carousel -->
+                </div>
+                <!-- /.container -->
+                <!--end-->
+                <!--####################################################################################################-->
+            </div>
+        </div>
+    </section>
+    <section id="meetTheCrew">
+        <div class="container">
+            <div class="wrap1">
+                <div class="navalLogo wow fadeInUp"> <img src="img/mask.png" class="mask"></div>
+                <h2 class="aboutUsHeader wow fadeInUp" data-wow-delay="0.5s"><span class="accent-text">Meet </span>the team</h2>
+                <div class="content wow fadeInUp" data-wow-delay="1s">
+                    <p>Our team puts in thousands of hours of research, discovery, preparation and work. We are stoked when others like them as much as we do.Just to let people know we are mad scientists as well as artisans. We may break the rules in the name of art, but only after we understand the science.</p>
+                </div>
+                <div class="navalLogo1 wow fadeInUp" data-wow-delay="1s"><img src="img/crew.jpg" class="crew"></div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="navalLogo wow fadeInUp"> <img src="img/naval.png" class="naval"> </div>
+            <h2 class="aboutUsHeader wow fadeInUp" data-wow-delay="0.5s"><span class="accent-text">Say </span>HELLO</h2>
+            <div class="wrap1">
+                <div class="column1 scroll-into-view ">
+                    <form method="post" target="" id="contactForm" action="" class="wow fadeInUp" data-wow-delay="1.5s">
+                        <div class="firstRow">
+                            <label class="colFormat fontFormat" for="firstName">Name</label> <span class="colFormat"><input name="firstName" id="firstName"  tabindex="1" type="text"></span>
+                            <label class="colFormat fontFormat1" for="firstName">First</label> <span class="colFormat"><input name="lastName" id="lastName"  tabindex="2" type="text"></span>
+                            <label class="colFormat fontFormat1" for="lastName">Last</label>
+                        </div> <span class="secondRow_col1">
+                                <label class="fontFormat" for="emailID">Email Address</label> <span class="colFormat"> <input name="emailID" id="emailID" placeholder="Email ID" tabindex="3" type="text"></span> </span> <span class="secondRow_col2">
+                                <label class="fontFormat" for="phoneNo">Phone Number</label> <span class="colFormat">  <input name="phoneNo" id="phoneNo" placeholder="Phone Number" tabindex="4" type="text"></span> </span>
+                        <label class="colFormat fontFormat" for="message">Message</label>
+                        <textarea name="message" id="message" class="textarea" tabindex="5" placeholder="Message" rows="10" cols="50"></textarea>
+                        <input id="submitBtn" class="button" value="Send" tabindex="6" type="submit"> </form>
+                </div>
+                <div class="column2 wow fadeInUp" data-wow-delay="1s">
+                    <ul class="info">
+                        <li><span class="mainheader">SEAPORT BREWING COMPANY</span></li>
+                        <li>45-34 Santa Maria Road</li>
+                        <li>Sevilla 41005</li>
+                        <li><a class="direction" href="" target="_blank">Get Directions</a></li>
+                    </ul>
+                    <ul class="info">
+                        <li><span class="mainheader">P</span> 191.555.5248</li>
+                        <li><span class="mainheader">T</span> 1.777.542.8452</li>
+                        <li><span class="mainheader">E</span> info@seaport.com</li>
+                    </ul>
+                    <ul class="info hours">
+                        <li><span class="mainheader">Hours</span></li>
+                        <li>Mon - Wed: 10am - 11:30pm</li>
+                        <li>Thu- Fri: 10am - 11pm</li>
+                        <li>Sat: 10am - 11pm</li>
+                    </ul>
+                    <ul class="socialMediaList">
+                        <li>
+                            <a target="_blank" href="https://www.facebook.com"></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://twitter.com"></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://instagram.com"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="mainfooter" class="mainfooter">
+        <div class="container">
+            <div class="wrap2">
+                <div class="navalLogo wow fadeInUp"> <img class="b-lazy b-error" src="img/thebeerlogo.png" alt=""></div>
+                <h3 class="mainheader aboutUsHeader footerHeader wow fadeInUp" data-wow-delay="1s">we brew excellent handcrafted beer every day in Sevilla Madrid</h3>
+                <form method="post" id="gform_2" class="wow fadeInUp" data-wow-delay="1.5s">
+                    <div class="footertxtbox">
+                        <label class="fontFormat" for="input_2_1">ENTER YOUR EMAIL ADDRESS HERE</label>
+                        <input name="newsletter" id="newsletter" tabindex="7" placeholder="Newsletter Sign Up" type="email"> </div>
+                    <div class="footerbtn">
+                        <input id="submitBtn" class="button" value="Submit" tabindex="6" type="submit"> </div>
+                </form>
+                <div class="copyright">© 2017 Seaport Brewing Company Inc. All Rights Reserved. </div>
+            </div>
+        </div>
+    </footer>
+    <div id="bubbles">
+        <div class="bubble x1"></div>
+        <div class="bubble x2"></div>
+        <div class="bubble x3"></div>
+        <div class="bubble x4"></div>
+        <div class="bubble x5"></div>
+        <div class="bubble x6"></div>
+        <div class="bubble x7"></div>
+        <div class="bubble x8"></div>
+        <div class="bubble x9"></div>
+        <div class="bubble x10"></div>
+        <div class="bubble x11"></div>
+        <div class="bubble x12"></div>
+        <div class="bubble x13"></div>
+        <div class="bubble x14"></div>
+        <div class="bubble x15"></div>
+        <div class="bubble x16"></div>
+        <div class="bubble x17"></div>
+        <div class="bubble x18"></div>
+        <div class="bubble x19"></div>
+        <div class="bubble x20"></div>
+        <div class="bubble x21"></div>
+        <div class="bubble x22"></div>
+        <div class="bubble x23"></div>
+        <div class="bubble x24"></div>
+        <div class="bubble x25"></div>
+        <div class="bubble x26"></div>
+        <div class="bubble x27"></div>
+        <div class="bubble x28"></div>
+        <div class="bubble x29"></div>
+        <div class="bubble x30"></div>
+        <div class="bubble x31"></div>
+        <div class="bubble x32"></div>
+        <div class="bubble x33"></div>
+        <div class="bubble x34"></div>
+        <div class="bubble x35"></div>
+    </div>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <!-- Demo scripts -->
+    <!--<script src="js/demo.js"></script>-->
+    <script src="js/main.js"></script>
+    <script src="js/scroll.js"></script>
+</body>
+
+</html>
