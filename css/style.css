@@ -1,0 +1,1991 @@
+/*RESET CSS STARTS*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+{
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*RESET CSS END*/
+
+
+/* HELPER CLASSES BEGIN */
+
+.alignLeft {
+    float: left;
+}
+
+.alignRight {
+    float: right;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+.margin-bottom-40 {
+    margin-bottom: 40px;
+}
+
+strong,
+b {
+    font-weight: 700;
+}
+
+em,
+i {
+    font-style: italic;
+}
+
+
+/*HELPER CLASSES END*/
+
+
+/*General*/
+
+@font-face {
+    font-family: 'HelveticaNeue-Thin';
+    src: local('HelveticaNeue-Thin.otf'), url('HelveticaNeue-Thin.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'nexa_rust_sans_black';
+    src: local('nexa-rust-sans-black-58c5b733a697a.otf'), url('nexa-rust-sans-black-58c5b733a697a.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'nexa_rust_script';
+    src: local('nexa-rust-script-l-0-58c5dd9224eca.otf'), url('nexa-rust-script-l-0-58c5dd9224eca.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'HelveticaNeue-Thin';
+    position: relative;
+    /*font-family: 'Montserrat', sans-serif;*/
+}
+
+.container {
+    /* max-width: 1800px;*/
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    /*padding: 20px 0px;*/
+    background-color: #98ebd7;
+    position: relative;
+    background-image: url("../img/sea.png");
+}
+
+.header {
+    max-width: 1068px;
+    min-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#homePage .container {
+    height: 900px;
+    background-color: #98ebd7;
+}
+
+
+/*
+.nav{
+    padding-top: 3%;
+}
+*/
+
+
+/*.nav li {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 3%
+}*/
+
+
+/*.nav li:first-child {
+    padding-left: 142px;
+}*/
+
+.nav li a,
+.navbar-brand {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    /*padding-right: 30px;*/
+    font-family: nexa_rust_sans_black, helvetica, arial, sans-serif;
+    font-size: 0.95rem;
+    display: block;
+}
+
+.nav li a:hover {
+    color: white;
+    font-weight: 1200;
+}
+
+.socialMediaList li {
+    display: inline-block;
+    height: 18px;
+}
+
+
+/*.nav li a .homeLogo{
+    width: 100px;
+    height: 100px;;
+    display: block;
+}*/
+
+.fixed-nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 50px;
+    background-color: #00a087;
+}
+
+.socialMediaList {
+    position: absolute;
+    top: 15px;
+    right: 32px;
+    padding: 0;
+}
+
+.subHeader {
+    text-decoration: none;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    margin-top: 10%;
+    height: 20px;
+}
+
+.subHeaderTitle {
+    text-decoration: none;
+    line-height: 1em;
+    text-align: center;
+    font-family: nexa_rust_sans_black, helvetica, arial, sans-serif;
+    font-size: 1.5rem;
+}
+
+.accent-text {
+    color: #4b938f;
+    font-family: nexa_rust_script;
+    display: block;
+    text-decoration: none;
+    font-size: 5.5rem;
+    line-height: 1.0em;
+}
+
+.accent-text2 {
+    color: #4b938f;
+    font-family: nexa_rust_script;
+    display: block;
+    text-decoration: none;
+    font-size: 5.5rem;
+    line-height: 1.0em;
+}
+
+.subHeaderHandicraftedBeer {
+    color: #201c1c;
+    ;
+    font-size: 4.0rem;
+    font-family: nexa_rust_sans_black, helvetica, arial, sans-serif;
+    line-height: 0.8em;
+}
+
+.subHeaderEst {
+    color: #201c1c;
+    text-decoration: none;
+    font-size: 0.80rem;
+    line-height: 0.8em;
+    font-family: nexa_rust_sans_black, helvetica, arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.subHeaderEst .dot {
+    font-family: sans-serif
+}
+
+.backgroundImage {
+    height: 20px;
+    margin-top: 400px;
+    width: 100%;
+}
+
+.boat {
+    background-image: url('../img/boat%20.png');
+    width: 479px;
+    height: 179px;
+    position: absolute;
+    z-index: 10;
+    top: 82px;
+    left: 600px;
+}
+
+.mountainImg {
+    /*background-color: forestgreen;*/
+    height: 40%;
+    background-image: -webkit-linear-gradient(rgba(153, 234, 215, 0.9), rgba(153, 234, 215, 0.9)), url('../img/mountain.jpg');
+    background-image: -o-linear-gradient(rgba(153, 234, 215, 0.9), rgba(153, 234, 215, 0.9)), url('../img/mountain.jpg');
+    background-image: linear-gradient(rgba(153, 234, 215, 0.9), rgba(153, 234, 215, 0.9)), url('../img/mountain.jpg');
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed;*/
+    width: 100%;
+    margin-top: 16%;
+    position: relative;
+}
+
+.layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* background-color: rosybrown;*/
+}
+
+.wave1 {
+    background: url(../img/cwave1.png);
+    bottom: 40px;
+    height: 100px;
+    width: 100%;
+    z-index: 20;
+    position: absolute;
+    /* background-color: firebrick;*/
+}
+
+.wave2 {
+    background: url(../img/cwave2.png);
+    bottom: -40px;
+    width: 100%;
+    height: 150px;
+    z-index: 22;
+    position: absolute;
+}
+
+.wave3 {
+    background: url(../img/cwave3.png);
+    bottom: -110px;
+    width: 100%;
+    height: 150px;
+    z-index: 25;
+    position: absolute;
+}
+
+.wave4 {
+    background: url(../img/cwave4.png);
+    bottom: -180px;
+    width: 100%;
+    z-index: 26;
+    height: 150px;
+    position: absolute;
+}
+
+.lighthouse {
+    background: url(../img/lighthouse.png);
+    bottom: 70px;
+    width: 150px;
+    z-index: 23;
+    height: 350px;
+    right: 100px;
+    position: absolute;
+}
+
+.rock {
+    background: url(../img/rock.png);
+    bottom: -10px;
+    width: 700px;
+    right: -100px;
+    z-index: 24;
+    height: 150px;
+    position: absolute;
+}
+
+#aboutUs .container {
+    height: 800px;
+    padding-top: 15%;
+    background-color: #05363a;
+}
+
+.aboutUsHeader {
+    text-align: center;
+}
+
+.aboutUsHeader .accent-text {
+    font-size: 3rem;
+    text-decoration: none;
+    line-height: 1.0em;
+}
+
+#aboutUs h2,
+#meetTheCrew h2,
+#contact h2,
+#theBeer h2 {
+    color: #201c1c;
+    font-family: nexa_rust_sans_black, helvetica, arial, sans-serif;
+    font-weight: 400;
+    font-size: 3.05rem;
+    line-height: 1.0;
+    color: white;
+    margin-bottom: 60px;
+    padding: 0% 3%;
+}
+
+.column {
+    width: 48%;
+    float: left;
+}
+
+.wrap {
+    margin-top: 50px;
+    background-color: red;
+}
+
+.col1,
+.col2 {
+    width: 45%;
+    padding-left: 10%;
+    /* text-align: justify;
+    text-justify: inter-word;*/
+    /* padding: 0% 10%;*/
+    color: #fff;
+    line-height: 1.5rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-family: "Droid Serif", serif;
+    height: auto;
+}
+
+#theBeer .container {
+    background-color: #05363a;
+}
+
+.wrap4 {
+    max-width: 1120px;
+    min-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 830px;
+}
+
+.slidecol {
+    padding: 0% 10%;
+    height: 820px;
+}
+
+.slidecol.part1 {
+    float: left;
+    width: 33.33%;
+}
+
+.slidecol.part2 {
+    float: left;
+    width: 33.33%;
+}
+
+.slidecol.part3 {
+    float: left;
+    width: 33.33%;
+}
+
+.bottle {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100px;
+    height: 450px
+    /*height:auto;*/
+    display: block;
+}
+
+.subtitle {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.h3substitute {
+    color: #201c1c;
+    font-family: nexa_rust_sans_black, helvetica, arial, sans-serif;
+    font-weight: 400;
+    font-size: 2.05rem;
+    line-height: 1.0;
+    text-align: center;
+    color: white;
+}
+
+.addPadding {
+    padding-bottom: 10%;
+}
+
+.blocks {
+    margin-top: 10%;
+    border-top: 1px solid #517274;
+    border-bottom: 1px solid #517274;
+}
+
+.blocks li {
+    display: inline-block;
+    width: 49%;
+    vertical-align: middle;
+    padding: 5% 0%;
+}
+
+.levels {
+    display: block;
+    margin: 0 auto;
+}
+
+.blocks li.level {
+    border-left: 1px solid #517274;
+}
+
+.abv {
+    color: #4b938f;
+    text-align: center;
+    font-family: nexa_rust_sans_black, helvetica, arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.05rem;
+}
+
+.subTitleHeadline,
+.subTitleText {
+    /* padding: 0% 10%;*/
+    color: #fff;
+    line-height: 1.3rem;
+    font-weight: 400;
+    font-size: 1.15rem;
+    font-family: "Droid Serif", serif;
+}
+
+.subTitleHeadline {
+    font-style: italic;
+}
+
+.subTitleText {
+    padding: 10% 0%;
+}
+
+#meetTheCrew .container {
+    /*height: 1750px;*/
+    background-color: #05363a;
+    height: auto;
+}
+
+.content {
+    padding: 0% 10%;
+    color: #fff;
+    line-height: 1.5rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-family: "Droid Serif", serif;
+}
+
+.crew {
+    margin-top: 40px;
+    max-width: 100%;
+    height: auto;
+}
+
+#contact .container {
+    height: 1300px;
+    /*height: auto;*/
+    background-color: #05363a;
+}
+
+.navalLogo {
+    margin-top: 7%;
+    text-align: center;
+}
+
+.navalLogo1 {
+    text-align: center;
+}
+
+.wrap1 {
+    max-width: 960px;
+    min-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrap3 {
+    max-width: 1350px;
+    min-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.column1 {
+    width: 68%;
+    float: left;
+    /*height: 50px;*/
+    padding-left: 2%;
+    padding-right: 10%;
+}
+
+.column2 {
+    width: 32%;
+    float: left;
+}
+
+.mainheader {
+    color: #4b938f;
+    line-height: 1em;
+    font-family: nexa_rust_sans_black, helvetica, arial, sans-serif;
+    font-size: 1.0em
+}
+
+ul {
+    margin-bottom: 1.85rem;
+}
+
+li {
+    color: white;
+    line-height: 1.5;
+    font-weight: 600;
+    font-size: 1.0em;
+    font-family: Droid Serif",serif;
+
+}
+
+.direction {
+    text-decoration: none;
+    color: white;
+    line-height: 1.5;
+    font-weight: 600;
+    font-family: Droid Serif",serif
+
+}
+
+.colFormat {
+    width: 100%;
+}
+
+.fontFormat {
+    color: #fff;
+    display: block;
+    font-family: nexa_rust_sans_black, helvetica, arial, sans-serif;
+    font-size: .95rem;
+    padding: 0.3rem 0;
+    text-transform: uppercase;
+}
+
+form input[type=password],
+form input[type=text],
+form input[type=email] {
+    border: 1px solid #CCC;
+    font-size: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    background: 0 0;
+    padding: 0 0.9375rem;
+    border-radius: 4px;
+    height: 3.125rem;
+    color: #fff;
+    width: 100%;
+    display: block;
+}
+
+.fontFormat1 {
+    color: #787878;
+    display: block;
+    font-size: 1.0375rem;
+    padding: 0.3rem 0;
+}
+
+.secondRow_col1 {
+    margin-right: 2%;
+}
+
+.secondRow_col1,
+.secondRow_col2 {
+    width: 49%;
+    float: left;
+    margin-top: 5%;
+}
+
+.messageFormat {
+    margin-top: 5%;
+}
+
+.textarea {
+    border: 1px solid #CCC;
+    font-size: 18px;
+    background: 0 0;
+    padding: 0.93rem 0.9375rem;
+    border-radius: 4px;
+    color: #fff;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+#emailID,
+#phoneNo {
+    margin-bottom: 15%;
+}
+
+.button {
+    border: none;
+    color: #fff;
+    background: #4c9390;
+    display: block;
+    font-size: 15px;
+    font-size: .9375rem;
+    border-radius: 4px;
+    max-width: 8.75rem;
+    padding: 1.09375rem .625rem;
+    width: 100%;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: nexa_rust_sans_black, helvetica, arial, sans-serif;
+}
+
+.mainfooter {
+    position: relative;
+}
+
+#mainfooter .container {
+    /* height: 600px;*/
+    background-color: #05363a;
+    height: 650px;
+    background-image: url(../img/sea-bottom.png);
+}
+
+.wrap2 {
+    max-width: 660px;
+    min-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+
+.footerHeader {
+    margin: 4%;
+}
+
+.footertxtbox {
+    width: 65%;
+    float: left;
+    padding-right: 2%;
+    padding-left: 13%;
+}
+
+.footerbtn {
+    width: 20%;
+    float: left;
+    display: block;
+    margin-top: 4%;
+}
+
+.wrap2 {
+    clear: both;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 42%;
+    color: #4c9390;
+    font-family: helvetica;
+    padding: 1.0rem 0;
+}
+
+
+/**************************Animation**************************/
+
+.boatAnimation {
+    -webkit-animation: rockBoat 3s ease-in-out infinite;
+    -moz-animation: rockBoat 3s ease-in-out infinite;
+    -o-animation: rockBoat 3s ease-in-out infinite;
+}
+
+.wave1animation {
+    -webkit-animation: wave1animation 3s ease-in-out infinite;
+    -moz-animation: wave1animation 3s ease-in-out infinite;
+    -o-animation: wave1animation 3s ease-in-out infinite;
+}
+
+.wave2animation {
+    -webkit-animation: wave2animation 5s ease-in-out infinite;
+    -moz-animation: wave2animation 5s ease-in-out infinite;
+    -o-animation: wave2animation 5s ease-in-out infinite;
+}
+
+.wave3animation {
+    -webkit-animation: wave3animation 3s ease-in-out infinite;
+    -moz-animation: wave3animation 3s ease-in-out infinite;
+    -o-animation: wave3animation 3s ease-in-out infinite;
+}
+
+.wave4animation {
+    -webkit-animation: wave4animation 4s ease-in-out infinite;
+    -moz-animation: wave4animation 4s ease-in-out infinite;
+    -o-animation: wave4animation 4s ease-in-out infinite;
+}
+
+.bubble {
+    position: absolute;
+    z-index: 9000;
+}
+
+.bubble {
+    background: 0 0;
+    border-radius: 1000px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    opacity: 0.5;
+    position: absolute;
+    animation-duration: 2.85714s
+}
+
+@-webkit-keyframes rockBoat {
+    0% {
+        -webkit-transform: translate3d(0%, -.5%, 0) rotate3d(0, 0, 1, 1.5deg);
+        transform: translate3d(0%, -.5%, 0) rotate3d(0, 0, 1, 1.5deg);
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out
+    }
+    50% {
+        -webkit-transform: translate3d(0%, .5%, 0) rotate3d(0, 0, 1, -1.5deg);
+        transform: translate3d(0%, .5%, 0) rotate3d(0, 0, 1, -1.5deg);
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out
+    }
+    100% {
+        -webkit-transform: translate3d(0%, -.5%, 0) rotate3d(0, 0, 1, 1.5deg);
+        transform: translate3d(0%, -.5%, 0) rotate3d(0, 0, 1, 1.5deg);
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out
+    }
+}
+
+@-webkit-keyframes wave1animation {
+    0% {
+        -webkit-transform: translate3d(0, 2%, 0);
+        transform: translate3d(0, 2%, 0);
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out
+    }
+    50% {
+        -webkit-transform: translate3d(0, -2%, 0);
+        transform: translate3d(0, -2%, 0);
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out
+    }
+    100% {
+        -webkit-transform: translate3d(0, 2%, 0);
+        transform: translate3d(0, 2%, 0);
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out
+    }
+}
+
+@-webkit-keyframes wave3animation {
+    0% {
+        -webkit-transform: translate3d(0, 3%, 0);
+        transform: translate3d(0, 3%, 0);
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out
+    }
+    50% {
+        -webkit-transform: translate3d(0, -3%, 0);
+        transform: translate3d(0, -3%, 0);
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out
+    }
+    100% {
+        -webkit-transform: translate3d(0, 3%, 0);
+        transform: translate3d(0, 3%, 0);
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out
+    }
+}
+
+@-webkit-keyframes wave4animation {
+    0% {
+        -webkit-transform: translate3d(0, 4%, 0);
+        transform: translate3d(0, 4%, 0);
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out
+    }
+    50% {
+        -webkit-transform: translate3d(0, -4%, 0);
+        transform: translate3d(0, -4%, 0);
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out
+    }
+    100% {
+        -webkit-transform: translate3d(0, 4%, 0);
+        transform: translate3d(0, 4%, 0);
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out
+    }
+}
+
+@-webkit-keyframes wave2animation {
+    0% {
+        -webkit-transform: translate3d(0, 5%, 0);
+        transform: translate3d(0, 5%, 0);
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out
+    }
+    50% {
+        -webkit-transform: translate3d(0, -5%, 0);
+        transform: translate3d(0, -5%, 0);
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out
+    }
+    100% {
+        -webkit-transform: translate3d(0, 5%, 0);
+        transform: translate3d(0, 5%, 0);
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out
+    }
+}
+
+/*For mozilla*/
+@-moz-keyframes rockBoat {
+    0% {
+        -moz-transform: translate3d(0%, -.5%, 0) rotate3d(0, 0, 1, 1.5deg);
+        transform: translate3d(0%, -.5%, 0) rotate3d(0, 0, 1, 1.5deg);
+        -moz-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out
+    }
+    50% {
+        -moz-transform: translate3d(0%, .5%, 0) rotate3d(0, 0, 1, -1.5deg);
+        transform: translate3d(0%, .5%, 0) rotate3d(0, 0, 1, -1.5deg);
+        -moz-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out
+    }
+    100% {
+        -moz-transform: translate3d(0%, -.5%, 0) rotate3d(0, 0, 1, 1.5deg);
+        transform: translate3d(0%, -.5%, 0) rotate3d(0, 0, 1, 1.5deg);
+        -moz-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out
+    }
+}
+
+@-moz-keyframes wave1animation {
+    0% {
+        -moz-transform: translate3d(0, 2%, 0);
+        transform: translate3d(0, 2%, 0);
+        -moz-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out
+    }
+    50% {
+        -moz-transform: translate3d(0, -2%, 0);
+        transform: translate3d(0, -2%, 0);
+        -moz-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out
+    }
+    100% {
+        -moz-transform: translate3d(0, 2%, 0);
+        transform: translate3d(0, 2%, 0);
+        -moz-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out
+    }
+}
+
+@-moz-keyframes wave3animation {
+    0% {
+        -moz-transform: translate3d(0, 3%, 0);
+        transform: translate3d(0, 3%, 0);
+        -moz-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out
+    }
+    50% {
+        -moz-transform: translate3d(0, -3%, 0);
+        transform: translate3d(0, -3%, 0);
+        -moz-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out
+    }
+    100% {
+        -moz-transform: translate3d(0, 3%, 0);
+        transform: translate3d(0, 3%, 0);
+        -moz-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out
+    }
+}
+
+@-moz-keyframes wave4animation {
+    0% {
+        -moz-transform: translate3d(0, 4%, 0);
+        transform: translate3d(0, 4%, 0);
+        -moz-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out
+    }
+    50% {
+        -moz-transform: translate3d(0, -4%, 0);
+        transform: translate3d(0, -4%, 0);
+        -moz-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out
+    }
+    100% {
+        -moz-transform: translate3d(0, 4%, 0);
+        transform: translate3d(0, 4%, 0);
+        -moz-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out
+    }
+}
+
+@-moz-keyframes wave2animation {
+    0% {
+        -moz-transform: translate3d(0, 5%, 0);
+        transform: translate3d(0, 5%, 0);
+        -moz-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out
+    }
+    50% {
+        -moz-transform: translate3d(0, -5%, 0);
+        transform: translate3d(0, -5%, 0);
+        -moz-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out
+    }
+    100% {
+        -moz-transform: translate3d(0, 5%, 0);
+        transform: translate3d(0, 5%, 0);
+        -moz-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out
+    }
+}
+
+
+.x1 {
+    background: 0 0;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    transform: scale(1.5);
+    opacity: 0.2;
+    -webkit-animation: moveclouds 45s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 45s linear infinite;
+    -o-animation: moveclouds 45s linear infinite;
+}
+
+.x2 {
+    background: 0 0;
+    left: 200px;
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 0.5;
+    -webkit-animation: moveclouds 25s linear infinite, sideWays 3s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 25s linear infinite;
+    -o-animation: moveclouds 25s linear infinite;
+}
+
+.x3 {
+    left: 350px;
+    background: 0 0;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.3;
+    -webkit-animation: moveclouds 30s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 30s linear infinite;
+    -o-animation: moveclouds 30s linear infinite;
+}
+
+.x4 {
+    background: 0 0;
+    left: 670px;
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    transform: scale(0.75);
+    opacity: 0.35;
+    -webkit-animation: moveclouds 38s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 38s linear infinite;
+    -o-animation: moveclouds 38s linear infinite;
+}
+
+.x5 {
+    background: 0 0;
+    left: 850px;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.3;
+    -webkit-animation: moveclouds 27s linear infinite, sideWays 1s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 27s linear infinite;
+    -o-animation: moveclouds 27s linear infinite;
+}
+
+.x6 {
+    left: 1150px;
+    background: 0 0;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    transform: scale(0.5);
+    opacity: 0.9;
+    -webkit-animation: moveclouds 18s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 18s linear infinite;
+    -o-animation: moveclouds 18s linear infinite;
+}
+
+.x7 {
+    background: 0 0;
+    left: 600px;
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 0.5;
+    -webkit-animation: moveclouds 32s linear infinite, sideWays 3s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 32s linear infinite;
+    -o-animation: moveclouds 32s linear infinite;
+}
+
+.x8 {
+    left: 550px;
+    background: 0 0;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.3;
+    -webkit-animation: moveclouds 50s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 50s linear infinite;
+    -o-animation: moveclouds 50s linear infinite;
+}
+
+.x9 {
+    left: 250px;
+    background: 0 0;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    transform: scale(0.5);
+    opacity: 0.9;
+    -webkit-animation: moveclouds 27s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 27s linear infinite;
+    -o-animation: moveclouds 27s linear infinite;
+}
+
+.x10 {
+    background: 0 0;
+    left: 950px;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.3;
+    -webkit-animation: moveclouds 37s linear infinite, sideWays 1s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 37s linear infinite;
+    -o-animation: moveclouds 37s linear infinite;
+}
+
+.x11 {
+    left: 1000px;
+    background: 0 0;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    transform: scale(1.5);
+    opacity: 0.2;
+    -webkit-animation: moveclouds 60s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 60s linear infinite;
+    -o-animation: moveclouds 60s linear infinite;
+}
+
+.x12 {
+    background: 0 0;
+    left: 20px;
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 0.5;
+    -webkit-animation: moveclouds 35s linear infinite, sideWays 3s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 35s linear infinite;
+    -o-animation: moveclouds 35s linear infinite;
+}
+
+.x13 {
+    left: 690px;
+    background: 0 0;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.3;
+    -webkit-animation: moveclouds 55s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 55s linear infinite;
+    -o-animation: moveclouds 55s linear infinite;
+}
+
+.x14 {
+    background: 0 0;
+    left: 170px;
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    transform: scale(0.75);
+    opacity: 0.35;
+    -webkit-animation: moveclouds 29s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 29s linear infinite;
+    -o-animation: moveclouds 29s linear infinite;
+}
+
+.x15 {
+    background: 0 0;
+    left: 1150px;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.3;
+    -webkit-animation: moveclouds 48s linear infinite, sideWays 1s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 48s linear infinite;
+    -o-animation: moveclouds 48s linear infinite;
+}
+
+.x16 {
+    left: 1150px;
+    background: 0 0;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    transform: scale(0.5);
+    opacity: 0.9;
+    -webkit-animation: moveclouds 38s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 38s linear infinite;
+    -o-animation: moveclouds 38s linear infinite;
+}
+
+.x17 {
+    background: 0 0;
+    left: 600px;
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 0.5;
+    -webkit-animation: moveclouds 27s linear infinite, sideWays 3s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 27s linear infinite;
+    -o-animation: moveclouds 27s linear infinite;
+}
+
+.x18 {
+    left: 260px;
+    background: 0 0;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.3;
+    -webkit-animation: moveclouds 22s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 22s linear infinite;
+    -o-animation: moveclouds 22s linear infinite;
+}
+
+.x19 {
+    left: 1350px;
+    background: 0 0;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    transform: scale(0.5);
+    opacity: 0.9;
+    -webkit-animation: moveclouds 58s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 58s linear infinite;
+    -o-animation: moveclouds 58s linear infinite;
+}
+
+.x20 {
+    background: 0 0;
+    left: 750px;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.3;
+    -webkit-animation: moveclouds 27s linear infinite, sideWays 1s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 27s linear infinite;
+    -o-animation: moveclouds 27s linear infinite;
+}
+
+.x21 {
+    left: 1400px;
+    background: 0 0;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    transform: scale(1.5);
+    opacity: 0.2;
+    -webkit-animation: moveclouds 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 20s linear infinite;
+    -o-animation: moveclouds 20s linear infinite;
+}
+
+.x22 {
+    background: 0 0;
+    left: 50px;
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 0.5;
+    -webkit-animation: moveclouds 25s linear infinite, sideWays 3s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 25s linear infinite;
+    -o-animation: moveclouds 25s linear infinite;
+}
+
+.x23 {
+    left: 60px;
+    background: 0 0;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.3;
+    -webkit-animation: moveclouds 55s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 55s linear infinite;
+    -o-animation: moveclouds 55s linear infinite;
+}
+
+.x24 {
+    background: 0 0;
+    left: 370px;
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    transform: scale(0.75);
+    opacity: 0.35;
+    -webkit-animation: moveclouds 65s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 65s linear infinite;
+    -o-animation: moveclouds 65s linear infinite;
+}
+
+.x25 {
+    background: 0 0;
+    left: 1250px;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.3;
+    -webkit-animation: moveclouds 38s linear infinite, sideWays 1s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 38s linear infinite;
+    -o-animation: moveclouds 38s linear infinite;
+}
+
+.x26 {
+    left: 150px;
+    background: 0 0;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    transform: scale(0.5);
+    opacity: 0.9;
+    -webkit-animation: moveclouds 42s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 42s linear infinite;
+    -o-animation: moveclouds 42s linear infinite;
+}
+
+.x27 {
+    background: 0 0;
+    left: 400px;
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 0.5;
+    -webkit-animation: moveclouds 36s linear infinite, sideWays 3s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 36s linear infinite;
+    -o-animation: moveclouds 36s linear infinite;
+}
+
+.x28 {
+    left: 250px;
+    background: 0 0;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.3;
+    -webkit-animation: moveclouds 44s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 44s linear infinite;
+    -o-animation: moveclouds 44s linear infinite;
+}
+
+.x29 {
+    left: 750px;
+    background: 0 0;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    transform: scale(0.5);
+    opacity: 0.9;
+    -webkit-animation: moveclouds 18s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 18s linear infinite;
+    -o-animation: moveclouds 18s linear infinite;
+}
+
+.x30 {
+    background: 0 0;
+    left: 50px;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.3;
+    -webkit-animation: moveclouds 57s linear infinite, sideWays 1s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 57s linear infinite;
+    -o-animation: moveclouds 57s linear infinite;
+}
+
+.x31 {
+    left: 500px;
+    background: 0 0;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    transform: scale(1.5);
+    opacity: 0.2;
+    -webkit-animation: moveclouds 60s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 60s linear infinite;
+    -o-animation: moveclouds 60s linear infinite;
+}
+
+.x32 {
+    background: 0 0;
+    left: 420px;
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 0.5;
+    -webkit-animation: moveclouds 75s linear infinite, sideWays 3s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 75s linear infinite;
+    -o-animation: moveclouds 75s linear infinite;
+}
+
+.x33 {
+    left: 690px;
+    background: 0 0;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.3;
+    -webkit-animation: moveclouds 40s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 40s linear infinite;
+    -o-animation: moveclouds 40s linear infinite;
+}
+
+.x34 {
+    background: 0 0;
+    left: 870px;
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    transform: scale(0.75);
+    opacity: 0.35;
+    -webkit-animation: moveclouds 35s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 35s linear infinite;
+    -o-animation: moveclouds 35s linear infinite;
+}
+
+.x35 {
+    background: 0 0;
+    left: 150px;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.3;
+    -webkit-animation: moveclouds 18s linear infinite, sideWays 1s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 18s linear infinite;
+    -o-animation: moveclouds 18s linear infinite;
+}
+
+@-webkit-keyframes moveclouds {
+    0% {
+        top: 6500px;
+    }
+    100% {
+        top: 880px;
+    }
+}
+
+@-webkit-keyframes sideWays {
+    0% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: 50px;
+    }
+}
+
+@-moz-keyframes moveclouds {
+    0% {
+        top: 6500px;
+    }
+    100% {
+        top: 880px;
+    }
+}
+
+@-o-keyframes moveclouds {
+    0% {
+        top: 6500px;
+    }
+    100% {
+        top: 880px;
+    }
+}
+
+
+/*Navbar*/
+
+.menu {
+    color: #4c9390;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: nexa_rust_sans_black, helvetica, arial, sans-serif;
+    opacity: 0;
+}
+
+
+/*------------------Media Queries------------------*/
+
+.header ul.open {
+    clear: both;
+    width: 650px;
+    height: 100px;
+}
+
+@media only screen and (max-width:360px) {
+    .mountainImg {
+        margin: 0px;
+    }
+    .lighthouse {
+        display: none;
+    }
+    .rock {
+        display: none;
+    }
+    .subHeader {
+        padding-top: 11%;
+    }
+    .col1,
+    .col2 {
+        width: 95%;
+        font-size: 1.05rem;
+    }
+    .content {
+        font-size: 1.0rem;
+    }
+    #aboutUs h2,
+    #meetTheCrew h2,
+    #contact h2,
+    #theBeer h2 {
+        font-weight: 200;
+        font-size: 1.5rem;
+    }
+    .button{
+        font-size: .8375rem;
+         padding: 1.09375rem 0rem;
+    }
+    .copyright{
+        font-size: 0.8rem;
+        margin-top: 70%;
+    }
+    .addMargin{
+        padding: 0px 5px;
+    }
+     .bootstrap-iso .col-xs-12{
+        padding-left:0px;
+    }
+    .#contact .container {
+        height: 1800px;}
+}
+@media (max-width: 767px) /* @grid-float-breakpoint -1 */
+{
+    .navbar-fixed-top {
+        position: relative;
+        top: auto;
+    }
+    .navbar-collapse {
+        max-height: none;
+    }
+    body {
+        margin: 0;
+    }
+    .navbar-fixed-top .navbar-collapse{max-height:auto;}
+}
+
+/*iphone*/
+
+@media only screen and (max-width:768px) {
+    .header {
+        overflow: hidden;
+        position: absolute;
+        top: 15px;
+        right: 30px;
+        display: block;
+    }
+    .menu {
+        opacity: 1;
+        cursor: pointer;
+        float: right;
+    }
+    .socialMediaList {
+        display: none;
+    }
+    .header ul.nav {
+        height: 0px;
+        overflow: hidden;
+    }
+    .open li a .homeLogo {
+        display: none;
+    }
+    .header ul li {
+        float: none;
+        text-align: right;
+        display: block;
+        background-color: black;
+    }
+    .aboutUsHeader .accent-text, .subHeader .accent-text{
+        font-size: 1.5rem;
+    }
+    .accent-text2 {
+        font-size: 1.5rem;
+    }
+    .subHeaderHandicraftedBeer {
+        font-size: 1.0rem;
+    }
+    .subHeader {
+        margin-top: 11%;
+    }
+    .boat {
+        display: none;
+    }
+    .lighthouse {
+        height: 300px;
+        width: 115px;
+        bottom: -60px;
+    }
+    .wave4 {
+        bottom: -220px;
+    }
+    .wave3 {
+        bottom: -180px;
+    }
+    .wave2 {
+        bottom: -130px;
+    }
+    .rock {
+        bottom: -130px;
+    }
+    .wave1 {
+        bottom: -60px;
+    }
+    .backgroundImage {
+        margin: 150px;
+    }
+    #homePage .container {
+        height: 500px;
+    }
+    .col1,
+    .col2 {
+        width: 98%;
+        font-size: 1.05rem;
+        padding-right: 32px;
+    }
+    #aboutUs h2,
+    #meetTheCrew h2,
+    #contact h2,
+    #theBeer h2 {
+        font-weight: 300;
+        font-size: 1.15rem;
+    }
+    .col1 {
+        padding-bottom: 20px;
+    }
+    .content {
+        font-size: 1.05rem;
+    }
+    .navalLogo1 {
+        padding: 0% 5%;
+    }
+    .column1,
+    .column2 {
+        width: 100%;
+        padding: 0% 32px;
+        padding-bottom: 20px;
+    }
+     .footertxtbox {
+        width: 100%;
+         padding: 0% 5%;
+    }
+    .footerbtn{
+       margin-left: 5%;
+    }
+    .copyright{
+        margin-top: 60%;
+    }
+    
+     .addMargin{
+        padding: 0px 55px;
+    }
+    .subTitleText {
+    padding: 5% 0%;
+}
+    
+}
+
+@media only screen and (min-width:769px) and (max-width:1023px) {
+    
+     .accent-text {
+        font-size: 4.5rem;
+    }
+     .subHeaderHandicraftedBeer {
+        font-size: 3.0rem;
+    }
+}
+
+
+/*ipad*/
+
+
+/*Netbook*/
+
+@media only screen and (min-width:1024px) {
+    .nav {
+        padding-top: 0px;
+    }
+    .nav li a .homeLogo {
+        width: 100px;
+        height: 100px;
+        ;
+        display: block;
+    }
+   
+    .subHeaderHandicraftedBeer {
+        font-size: 3.0rem;
+    }
+    .subHeader {
+        margin-top: 7%;
+    }
+    .boat {
+        left: 250px;
+        width: 479px;
+        height: 179px;
+        top: 154px;
+    }
+    #homePage .container {
+        height: 900px;
+    }
+    .wave4 {
+        bottom: -190px;
+    }
+    .wave3 {
+        bottom: -150px;
+    }
+    .wave2 {
+        bottom: -100px;
+    }
+    .rock {
+        bottom: -50px;
+    }
+    .wave1 {
+        bottom: -20px;
+    }
+    .lighthouse {
+        bottom: 30px;
+    }
+    .col1,
+    .col2 {
+        font-size: 1.3rem;
+    }
+    .content {
+        font-size: 1.3rem;
+    }
+    #aboutUs h2,
+    #meetTheCrew h2,
+    #contact h2,
+    #theBeer h2 {
+        font-weight: 350;
+        font-size: 2.65rem;
+    }
+    .slidecol {
+        padding: 0% 2%;
+    }
+    /****************************************/
+    .bottle {
+        margin: 0 auto;
+        max-width: 100%;
+        width: 80px;
+        height: auto;
+        display: block;
+    }
+    .h3substitute {
+        font-weight: 300;
+        font-size: 1.25rem;
+    }
+    .blocks {
+        margin-top: 8%;
+    }
+    .blocks li {
+        display: inline-block;
+        width: 49%;
+        vertical-align: middle;
+        padding: 3% 0%;
+    }
+    .subTitleHeadline,
+    .subTitleText {
+        font-weight: 400;
+        font-size: 1.05rem;
+    }
+    
+   
+    /****************************************/
+}
+
+@media screen and (min-width:1280px) {
+    #homePage .container {
+        height: 700px;
+    }
+    /*tablet*/
+    @media screen and (min-width:1336px) and (max-width:1680px) {
+        #homePage .container {
+            height: 835px;
+        }
+    }
+    .boat {
+        top: 120px;
+    }
+    .wave4{
+        bottom: -160px;
+    }
+    .subHeader {
+        padding-top: 75px;
+    }
+    .mountainImg {
+        margin-top: 0px;
+    }
+    .backgroundImg {
+        margin-top: 300px;
+    }
+}
+
+@media (max-width: 767px) {
+    .carousel-inner .active.left {
+        left: -100%;
+    }
+    .carousel-inner .next {
+        left: 100%;
+    }
+    .carousel-inner .prev {
+        left: -100%;
+    }
+    .active > div {
+        display: none;
+    }
+    .active > div:first-child {
+        display: block;
+    }
+    .bottle {
+        margin: 0 auto;
+        max-width: 100%;
+        width: 80px;
+        height: auto;
+        display: block;
+    }
+    .h3substitute {
+        font-weight: 300;
+        font-size: 1.25rem;
+    }
+    .blocks {
+        margin-top: 8%;
+    }
+    .blocks li {
+        display: inline-block;
+        width: 49%;
+        vertical-align: middle;
+        padding: 3% 0%;
+    }
+    .subTitleHeadline,
+    .subTitleText {
+        font-weight: 400;
+        font-size: 1.05rem;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 992px) {
+    .carousel-inner .active.left {
+        left: -50%;
+    }
+    .carousel-inner .next {
+        left: 50%;
+    }
+    .carousel-inner .prev {
+        left: -50%;
+    }
+    .active > div {
+        display: none;
+    }
+    .active > div:first-child {
+        display: block;
+    }
+    .active > div:first-child + div {
+        display: block;
+    }
+    .bottle {
+        margin: 0 auto;
+        max-width: 100%;
+        width: 80px;
+        height: auto;
+        display: block;
+    }
+    .h3substitute {
+        font-weight: 300;
+        font-size: 1.25rem;
+    }
+    .blocks {
+        margin-top: 8%;
+    }
+    .blocks li {
+        display: inline-block;
+        width: 49%;
+        vertical-align: middle;
+        padding: 3% 0%;
+    }
+    .subTitleHeadline,
+    .subTitleText {
+        font-weight: 400;
+        font-size: 1.05rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .carousel-inner .active.left {
+        left: -33.33%;
+    }
+    .carousel-inner .next {
+        left: 33.33%;
+    }
+    .carousel-inner .prev {
+        left: -33.33%;
+    }
+}
